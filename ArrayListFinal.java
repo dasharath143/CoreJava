@@ -2,6 +2,9 @@ package com.dasharath.java;
 
 import java.util.*;
 
+//What will happens if I make a ArrayList as final
+//How make an ArrayList as unmodifiableList
+
 public class ArrayListFinal {
 
     public static void main(String[] args) {
@@ -10,7 +13,7 @@ public class ArrayListFinal {
         list.add(7);
         list.add(5);
         list.add(1);
-        //list=new ArrayList(); can not do it
+        //list=new ArrayList(); can not do it because you made list final at line #11
         List list1=Collections.unmodifiableList(list);
         list1.add(12);
         list.remove(3);
