@@ -1,5 +1,7 @@
 package com.dasharath.java;
 
+//Write a program to check weather a given number is Prime or Not
+
 public class PrimeNumbers {
 
     public static void main(String[] args) {
