@@ -13,8 +13,8 @@ public class ArrayListFinal {
         list.add(7);
         list.add(5);
         list.add(1);
-        //list=new ArrayList(); can not do it because you made list final at line #11
-        List list1=Collections.unmodifiableList(list);
+       //list=new ArrayList(); can not do it because you made list final at line #11
+        List list1=Collections.unmodifiableList(list); // With this line you can make a list as unmodifiableList
         list1.add(12);
         list.remove(3);
         System.out.println(list);
