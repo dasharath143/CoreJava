@@ -1,4 +1,7 @@
-package com.journaldev;
+package com.dasharath.exceptions;
+
+//Sometimes we can create our own exception to meet our programming requirements. 
+//Such type of exceptions are called customized exceptions (user defined exceptions).
 
 class TooYoungException extends RuntimeException {
     TooYoungException(String s) {
