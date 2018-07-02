@@ -15,8 +15,7 @@ public class ArrayListFinal {
         list.add(1);
        //list=new ArrayList(); can not do it because you made list final at line #11
         List list1=Collections.unmodifiableList(list); // With this line you can make a list as unmodifiableList
-        list1.add(12);
-        list.remove(3);
+        list1.add(12); //This leads to UNSupportedException
         System.out.println(list);
 
     }
