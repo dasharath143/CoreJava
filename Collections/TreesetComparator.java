@@ -90,14 +90,14 @@ public class TreesetComparator {
         treeSet2.add(employee3);
         treeSet2.add(employee4);
         
-        //System.out.println("Sorting Employee with based on Name");
+        System.out.println("Sorting Employee with based on Name");
         for(Object employee:treeSet)
         {
             Employee emp=(Employee)employee;
             System.out.println(emp.getId()+" "+emp.getName()+" "+emp.getSalary());
         }
        
-        //System.out.println("Sorting Employee with based on Id");
+        System.out.println("Sorting Employee with based on Id");
         for(Object employee:treeSet2)
         {
             Employee emp=(Employee)employee;
