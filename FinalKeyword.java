@@ -29,19 +29,19 @@ class Demo {
 }
 /*Output:
 
-        Exception in thread"main"java.lang.Error:Unresolved compilation problem:
-        The final field Demo.MAX_VALUE cannot be assigned
+Exception in thread"main"java.lang.Error:Unresolved compilation problem:
+The final field Demo.MAX_VALUE cannot be assigned
 
-        at beginnersbook.com.Demo.myMethod(Details.java:6)
-        at beginnersbook.com.Demo.main(Details.java:10)
-        We got a compilation error in the above program because we tried to change the value of a
-        final variable “MAX_VALUE”.
+at beginnersbook.com.Demo.myMethod(Details.java:6)
+at beginnersbook.com.Demo.main(Details.java:10)
+We got a compilation error in the above program because we tried to change the value of a
+final variable “MAX_VALUE”.
 
-        Note:It is considered as a good practice to have constant names in UPPER CASE(CAPS)
+Note:It is considered as a good practice to have constant names in UPPER CASE(CAPS)
 
-        Blank final variable
-        A final variable that is not initialized at the time of declaration is known as blank final variable.
-        We must initialize the blank final variable in constructor of the
+Blank final variable
+A final variable that is not initialized at the time of declaration is known as blank final variable.
+We must initialize the blank final variable in constructor of the
 
 class otherwise it will throw a compilation error(Error:variable MAX_VALUE might not have been initialized).
 
@@ -67,10 +67,10 @@ class Demo {
 }
 /*
 Output:
+100
 
-        100
-        Whats the use of blank final variable?
-        Lets say we have a Student
+Whats the use of blank final variable?
+Lets say we have a Student
 
 class which is having a field called Roll No.Since Roll No should not be changed once the student is registered,
 we can declare it as a final variable in a
@@ -101,12 +101,13 @@ class StudentData {
 /*
 Output:
 
-        Roll no is:1234
-        More about blank final variable at StackOverflow and Wiki.
+Roll no is:1234
 
-        Uninitialized static final variable
-        A static final variable that is not initialized during declaration can only be initialized in static block.
-        Example:
+More about blank final variable at StackOverflow and Wiki.
+
+Uninitialized static final variable
+A static final variable that is not initialized during declaration can only be initialized in static block.
+Example:
 */
 
 class Example {
