@@ -36,7 +36,7 @@ class Demo {
         We got a compilation error in the above program because we tried to change the value of a
         final variable “MAX_VALUE”.
 
-        Note:It is considered as a good practice to have constant names in UPPER CASE(CAPS).
+        Note:It is considered as a good practice to have constant names in UPPER CASE(CAPS)
 
         Blank final variable
         A final variable that is not initialized at the time of declaration is known as blank final variable.
