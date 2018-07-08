@@ -8,7 +8,7 @@ public class Singleton {
 
     }
 
-    protected static Singleton getInstance()
+    public static Singleton getInstance()
 
     {
         if (singleton == null)
@@ -18,5 +18,3 @@ public class Singleton {
     }
 
 }
-
-
