@@ -9,6 +9,7 @@ We will cover following topics in detail.
         3)final class
 
 1)final variable
+
 final variables are nothing but constants.We cannot change the value of a final variable once it is initialized.
 Lets have a look at the below code:
 */
@@ -44,7 +45,7 @@ class Demo {
 
 class otherwise it will throw a compilation error(Error:variable MAX_VALUE might not have been initialized).
 
-        This is how a blank final variable is used in a class:*/
+This is how a blank final variable is used in a class:*/
 
 class Demo {
     //Blank final variable
@@ -123,15 +124,12 @@ class Example {
 /*Output:
 
         1230
-        2)final method
-        A final method cannot be overridden.Which means even though a sub
-
-class can call the
-        final method of parent
-
+        
+2)final method
+A final method cannot be overridden.Which means even though a sub class can call the final method of parent
 class without any issues but it cannot override it.
 
-        Example:*/
+ Example:*/
 
 class XYZ {
     final void demo() {
@@ -149,8 +147,9 @@ class ABC extends XYZ {
         obj.demo();
     }
 }
-    /*The above
-    program would throw a compilation error,however we can use the parent class final method in sub
+
+/*The above
+program would throw a compilation error,however we can use the parent class final method in sub
 
 class without any issues.Lets have a look at this code:This program would run fine as we are not overriding the
 final method.That shows that final methods are inherited but they are not eligible for overriding.
@@ -169,10 +168,9 @@ class ABC extends XYZ {
 }
 /*Output:
 
-        XYZ Class Method
-        3)
+XYZ Class Method
 
-final class
+3) final class
 We cannot extend a final class.Consider the below example:*/
 
 final class XYZ {
@@ -191,34 +189,18 @@ class ABC extends XYZ {
 /*
 Output:
 
-        The type ABC cannot subclass the
+The type ABC cannot subclass the
 
 final class XYZ
-Points to Remember:
-        1)A constructor cannot be declared as final.
-        2)Local final variable must be initializing during declaration.
-        3)All variables declared in an
 
-interface are by default final.
-        4)We cannot change the value of a final variable.
-        5)A final method cannot be overridden.
-        6)A
-
-final class not be inherited.
-        7)If method parameters are declared final then the value of these parameters cannot be changed.
-        8)It is a good practice to name final variable in all CAPS.
-        9)final,finally and finalize are three different terms.finally is used in exception handling and finalize
-        is a method that is called by JVM during garbage collection.
-*/
-
-    /*Points to Remember:
-        1) A constructor cannot be declared as final.
-        2) Local final variable must be initializing during declaration.
-        3) All variables declared in an interface are by default final.
-        4) We cannot change the value of a final variable.
-        5) A final method cannot be overridden.
-        6) A final class not be inherited.
-        7) If method parameters are declared final then the value of these parameters cannot be changed.
-        8) It is a good practice to name final variable in all CAPS.
-        9) final, finally and finalize are three different terms. finally is used in exception handling and
-        finalize is a method that is called by JVM during garbage collection.*/
+ /*Points to Remember:
+1) A constructor cannot be declared as final.
+2) Local final variable must be initializing during declaration.
+3) All variables declared in an interface are by default final.
+4) We cannot change the value of a final variable.
+5) A final method cannot be overridden.
+6) A final class not be inherited.
+7) If method parameters are declared final then the value of these parameters cannot be changed.
+8) It is a good practice to name final variable in all CAPS.
+9) final, finally and finalize are three different terms. finally is used in exception handling and
+finalize is a method that is called by JVM during garbage collection.*/
