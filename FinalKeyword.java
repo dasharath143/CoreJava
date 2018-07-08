@@ -1,7 +1,7 @@
 package com.dasharath.java;
 
 /*
-In this tutorial we will learn the usage of final keyword.final keyword can be used along with variables,methods and classes.
+Final keyword is a widly used keyword in java and it can be used along with variables,methods and classes.
 We will cover following topics in detail.
 
         1)final variable
