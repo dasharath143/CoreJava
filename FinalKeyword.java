@@ -1,14 +1,16 @@
 package com.dasharath.java;
 
 /*
-In this tutorial we will learn the usage of final keyword.final keyword can be used along with variables,methods and classes.We will cover following topics in detail.
+In this tutorial we will learn the usage of final keyword.final keyword can be used along with variables,methods and classes.
+We will cover following topics in detail.
 
         1)final variable
         2)final method
         3)final class
 
 1)final variable
-final variables are nothing but constants.We cannot change the value of a final variable once it is initialized.Lets have a look at the below code:
+final variables are nothing but constants.We cannot change the value of a final variable once it is initialized.
+Lets have a look at the below code:
 */
 
 class Demo {
@@ -31,12 +33,14 @@ class Demo {
 
         at beginnersbook.com.Demo.myMethod(Details.java:6)
         at beginnersbook.com.Demo.main(Details.java:10)
-        We got a compilation error in the above program because we tried to change the value of a final variable “MAX_VALUE”.
+        We got a compilation error in the above program because we tried to change the value of a
+        final variable “MAX_VALUE”.
 
         Note:It is considered as a good practice to have constant names in UPPER CASE(CAPS).
 
         Blank final variable
-        A final variable that is not initialized at the time of declaration is known as blank final variable.We must initialize the blank final variable in constructor of the
+        A final variable that is not initialized at the time of declaration is known as blank final variable.
+        We must initialize the blank final variable in constructor of the
 
 class otherwise it will throw a compilation error(Error:variable MAX_VALUE might not have been initialized).
 
@@ -67,9 +71,12 @@ Output:
         Whats the use of blank final variable?
         Lets say we have a Student
 
-class which is having a field called Roll No.Since Roll No should not be changed once the student is registered,we can declare it as a final variable in a
+class which is having a field called Roll No.Since Roll No should not be changed once the student is registered,
+we can declare it as a final variable in a
 
-class but we cannot initialize roll no in advance for all the students(otherwise all students would be having same roll no).In such case we can declare roll no variable as blank final and we initialize this value during object creation like this:
+class but we cannot initialize roll no in advance for all the students(otherwise all students would be having
+same roll no).In such case we can declare roll no variable as blank final and we initialize this value during object
+ creation like this:
 */
 
 class StudentData {
@@ -97,7 +104,8 @@ Output:
         More about blank final variable at StackOverflow and Wiki.
 
         Uninitialized static final variable
-        A static final variable that is not initialized during declaration can only be initialized in static block.Example:
+        A static final variable that is not initialized during declaration can only be initialized in static block.
+        Example:
 */
 
 class Example {
@@ -144,7 +152,8 @@ class ABC extends XYZ {
     /*The above
     program would throw a compilation error,however we can use the parent class final method in sub
 
-class without any issues.Lets have a look at this code:This program would run fine as we are not overriding the final method.That shows that final methods are inherited but they are not eligible for overriding.
+class without any issues.Lets have a look at this code:This program would run fine as we are not overriding the
+final method.That shows that final methods are inherited but they are not eligible for overriding.
 */
 class XYZ {
     final void demo() {
@@ -198,7 +207,8 @@ interface are by default final.
 final class not be inherited.
         7)If method parameters are declared final then the value of these parameters cannot be changed.
         8)It is a good practice to name final variable in all CAPS.
-        9)final,finally and finalize are three different terms.finally is used in exception handling and finalize is a method that is called by JVM during garbage collection.
+        9)final,finally and finalize are three different terms.finally is used in exception handling and finalize
+        is a method that is called by JVM during garbage collection.
 */
 
     /*Points to Remember:
@@ -210,4 +220,5 @@ final class not be inherited.
         6) A final class not be inherited.
         7) If method parameters are declared final then the value of these parameters cannot be changed.
         8) It is a good practice to name final variable in all CAPS.
-        9) final, finally and finalize are three different terms. finally is used in exception handling and finalize is a method that is called by JVM during garbage collection.*/
+        9) final, finally and finalize are three different terms. finally is used in exception handling and
+        finalize is a method that is called by JVM during garbage collection.*/
