@@ -1,4 +1,4 @@
-package com.dasharath.java;
+package com.dasharath.singleton;
 
 public class SingletonTest {
     public static void main(String[] args) {
