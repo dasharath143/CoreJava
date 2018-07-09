@@ -9,11 +9,12 @@ public class SingletonClone implements Cloneable{
     }
 
     @Override
+    // This prevents to create duplicate object using cloning
     protected Object clone() throws CloneNotSupportedException {
-        //return getInstance();
-        return super.clone();
+        return getInstance();
     }
-
+    
+   // This prevents to create duplicate object using serialization
     protected Object readResolve() {
         return getInstance();
     }
